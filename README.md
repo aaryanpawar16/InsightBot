@@ -1,25 +1,38 @@
-InsightBot 🤖
-Ask questions, get insights. Chat with your documents and data using the power of AI.
+# 🤖 InsightBot
 
-InsightBot is a powerful, self-hostable application that transforms your static documents into an interactive conversational resource. Upload your PDFs, text files, or other documents, and ask questions in natural language to get instant, context-aware answers pulled directly from your content.
+**InsightBot** is an AI-powered meeting intelligence assistant that helps you extract key insights from long meetings, Zoom calls, or YouTube videos — all in just a few clicks.
 
-✨ About The Project
-Navigating through dense technical manuals, lengthy reports, or academic papers can be time-consuming. InsightBot solves this problem by leveraging Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs). It ingests your documents, indexes the content in a vector database, and uses this knowledge base to provide accurate answers to your questions, complete with source references.
+With advanced **speech-to-text** and **natural language processing**, InsightBot turns spoken conversations into structured summaries and action points.
 
-This tool is perfect for researchers, students, developers, and businesses looking to unlock the knowledge hidden within their documents.
+---
 
-Key Features
-💬 Natural Language Queries: Ask questions in plain English, just like you're talking to a person.
+## 🚀 Features
 
-📚 Multi-Document Support: Works with various file formats (.pdf, .txt, .md, .csv).
+- 🎙️ **Audio Transcription**  
+  Upload recorded meetings audio — powered by **Whisper ASR** for high-accuracy transcription.
 
-🎯 Context-Aware Answers: The AI provides answers based only on the content of the documents you provide.
+- 🧠 **Smart Summarization**  
+  Get concise summaries of long discussions using **OpenAI GPT-4** or **Gemini Pro**.
 
-🔍 Source Citing: Pinpoints the exact documents or pages used to generate an answer, ensuring verifiability.
+- 📌 **Action Item Extraction**  
+  Automatically identify follow-up tasks and decisions made during the call.
 
-🌐 Simple Web Interface: Easy-to-use interface built with Streamlit for uploading files and chatting.
+- 🌐 **Modern Frontend**  
+  React-based UI with support for file uploads, status tracking, and output viewing.
 
-🔒 Secure & Private: Self-host the application to keep your documents and conversations completely private.
+---
+
+## 🛠️ Tech Stack
+
+| Layer         | Technology                    |
+|---------------|-------------------------------|
+| Frontend      | React, Tailwind CSS           |
+| Backend       | Flask, Python, Flask-CORS     |
+| ASR           | OpenAI Whisper (via Python)   |
+| Summarization | OpenAI GPT-4 / Gemini Pro     |
+| Deployment    | Localhost                     |
+
+
 
 Demo: Check out Demo Video of [InsightBot](https://youtu.be/Zmt4a-zDNZA?si=vrmxikaemJmugoQ-) on YouTube.
 
@@ -27,73 +40,50 @@ Screenshot:
 <img width="1882" height="895" alt="Screenshot 2025-07-24 192318" src="https://github.com/user-attachments/assets/33977c92-7324-4ea3-956a-87cfb0b97f9b" />
 
 
-Built With
-This project is built with a modern Python stack for AI applications:
+---
 
-Python
+## 📦 Setup Instructions
 
-LangChain - The core framework for chaining LLM operations.
-
-Google Gemini / OpenAI API - The Large Language Model for understanding and generation.
-
-🚀 Getting Started
-Follow these instructions to get a local copy up and running.
-
-Prerequisites
-You need to have the following installed on your system:
-
-Python 3.9+ and Pip
-
-Git (for cloning the repository)
-
-You will also need an API key from an LLM provider:
-
-Google AI API Key: Get one from Google AI Studio
-
-Installation
-Clone the repository:
-
-git clone https://github.com/aaryanpawar16/InsightBot.git
-cd InsightBot
-Create and activate a virtual environment:
-
-Windows:
+### 🔧 Backend Setup (Python + Flask)
+cd backend
 python -m venv venv
-.\venv\Scripts\activate
-
-macOS / Linux:
-python3 -m venv venv
-source venv/bin/activate
-
-Install the required dependencies:
+source venv/bin/activate       # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+python app.py
 
-Set up your environment variables:
-
-Create a file named .env in the root directory of the project.
-
-Add your API key to the .env file. Choose the key for the model you want to use.
-
-Code snippet
-
-# Example for Google Gemini
-GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
-
-Launch the Backend: App.py from your terminal.
-
-python App.py
-
-
-Launch the Frontend: App.js from your terminal.
-
-npm start
+### 🖥️ Frontend Setup (React)
+cd frontend
+npm install
+npm run dev
 
 Interact with InsightBot:
-
 Your browser should automatically open to the web interface (usually http://localhost:3000).
 
-The app will process the documents in the data folder.
+🧪 Example Usage
+Upload a meeting recording (.mp3, .mp4, etc.)
 
-Once processed, you can start asking questions in the chat input box.
+Wait for transcription & processing
+
+View:
+
+📄 Transcript
+
+🧠 Summary
+
+✅ Action Items
+
+🧠 How It Works
+ASR (Whisper): Converts audio into accurate text
+
+LLM (GPT-4/Gemini): Summarizes transcript & extracts key points
+
+🎯 Use Cases
+Business meetings
+
+Lectures & webinars
+
+Interview recordings
+
+Podcast content distillation
 
 Project Link: https://github.com/aaryanpawar16/InsightBot
