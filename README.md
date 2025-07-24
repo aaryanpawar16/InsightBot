@@ -50,10 +50,6 @@ You will also need an API key from an LLM provider:
 
 Google AI API Key: Get one from Google AI Studio
 
-OR
-
-OpenAI API Key: Get one from the OpenAI Platform
-
 Installation
 Clone the repository:
 
@@ -82,9 +78,6 @@ Code snippet
 
 # Example for Google Gemini
 GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
-
-# Example for OpenAI (if you've configured the code to use it)
-# OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
 
 Launch the Backend: App.py from your terminal.
 
