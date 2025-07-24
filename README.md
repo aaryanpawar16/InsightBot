@@ -22,6 +22,7 @@ Key Features
 🔒 Secure & Private: Self-host the application to keep your documents and conversations completely private.
 
 Demo
+<img width="1882" height="895" alt="Screenshot 2025-07-24 192318" src="https://github.com/user-attachments/assets/33977c92-7324-4ea3-956a-87cfb0b97f9b" />
 
 
 Built With
