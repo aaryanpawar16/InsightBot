@@ -90,7 +90,7 @@ npm start
 
 Interact with InsightBot:
 
-Your browser should automatically open to the web interface (usually http://localhost:8501).
+Your browser should automatically open to the web interface (usually http://localhost:3000).
 
 The app will process the documents in the data folder.
 
