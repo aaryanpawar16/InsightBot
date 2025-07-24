@@ -53,7 +53,7 @@ Google AI API Key: Get one from Google AI Studio
 Installation
 Clone the repository:
 
-git clone https://github.com/your_username/InsightBot.git
+git clone https://github.com/aaryanpawar16/InsightBot.git
 cd InsightBot
 Create and activate a virtual environment:
 
