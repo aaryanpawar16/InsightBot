@@ -1,5 +1,6 @@
 InsightBot 🤖
 Turn hours of meetings into minutes of insights. InsightBot is an AI-powered web application that automatically summarizes video and audio recordings into clear, actionable notes.
+<img width="2816" height="1536" alt="diagram" src="https://github.com/user-attachments/assets/759a9519-8f78-46fd-abe3-2596246f413b" />
 
 About The Project
 InsightBot was created to solve a universal problem in today's professional world: information overload from endless meetings. This tool allows users to upload a media file or paste a URL from a site like YouTube. It then leverages a powerful AI pipeline to transcribe the conversation, identify different speakers, and generate a structured summary with key points, decisions, and action items.
@@ -50,12 +51,12 @@ Clone the repo
 
 Bash
 
-git clone https://github.com/your_username/InsightBot.git
+git clone https://github.com/aaryanpawar16/InsightBot.git
 Set Up the Backend
 
 Bash
 
-cd insightbot/insightbot-backend
+cd insightbot/backend
 npm install
 Create a .env file in the backend root and add your API keys:
 
@@ -67,7 +68,7 @@ Set Up the Frontend
 
 Bash
 
-cd ../insightbot-frontend
+cd ../frontend
 npm install
 Run the Application
 
@@ -106,4 +107,5 @@ User Accounts & Team Workspaces: To allow users to save their meeting history an
 Seamless Workflow Integration: Connecting InsightBot to tools like Slack, Asana, and Google Calendar to automatically post summaries and create tasks from action items.
 
 Real-Time Meeting Assistant: The ultimate vision is for InsightBot to "join" live meetings on platforms like Zoom and Google Meet, providing the summary the moment the meeting ends.
+
 
